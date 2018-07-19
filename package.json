@@ -5,9 +5,9 @@
   "scripts": {
     "start": "nodemon",
     "seed": "node seed.js",
-    "deploy": "cd .. && cd client && yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
+    "deploy": "cd client && yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
     "server": "node server.js",
-    "heroku-postbuild": "cd .. && cd client && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "engines":
     {"node": "8.11.1"}
