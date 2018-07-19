@@ -6,14 +6,16 @@ const bodyParser = require('body-parser');
 const handle = require('./handlers');
 const db = require('./models');
 const routes = require('./routes');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT;
 
+
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('/', (req, res)=>res.json({hello: 'world'}));
+app.get('/', (req, res)=>res.sendFile(path.join(__dirname, 'client/build/index.html')));
 app.use('/api/auth', routes.auth);
 app.use('/api/polls', routes.poll);
 
