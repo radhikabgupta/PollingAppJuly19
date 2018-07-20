@@ -1,4 +1,4 @@
-require('dotenv').config();
+// require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -25,6 +25,6 @@ app.use('/api/polls', routes.poll);
 app.use(handle.notFound);
 app.use(handle.errors);
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || process.env.DATABASE);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/poll");
 
 app.listen(port, console.log(`Server listening on port ${port}`)); 
