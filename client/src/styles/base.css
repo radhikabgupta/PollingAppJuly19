@@ -1,7 +1,7 @@
 :root {
-  --danger: #ee3c2c;
-  --blue: #2D2D2D;
-  --light: rgb(246, 247, 248);
+    --danger: #ee3c2c;
+    --blue: #2D2D2D;
+    --light: #CDCED0;
   }
   
   body {

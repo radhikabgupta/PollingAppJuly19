@@ -5,6 +5,7 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 import { getCurrentPoll } from '../store/actions';
 import HomePage from '../pages/HomePage';
 import AuthPage from '../pages/AuthPage';
+import AuthPage from '../pages/AuthPage';
 import PollPage from '../pages/PollPage';
 import CreatePollPage from '../pages/CreatePollPage';
 
