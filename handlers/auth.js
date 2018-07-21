@@ -43,6 +43,7 @@ exports.login = async (req, res, next) => {
       throw new Error();
     }
   } catch (err) {
+    console.log(err)
     return next({ status: 400, message: 'Invalid Username/Password' });
   }
 };
