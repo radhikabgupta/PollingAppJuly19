@@ -3,7 +3,7 @@
 - Registered users can create and vote a poll. 
 - Registered users can log in and create their own polls. 
 - Users can observe their own polling activity.
-- Users can cast only one vote on a apoll.
+- Users can cast only one vote on a poll.
 
 # Built with the MERN stack
 ![Overview](https://raw.githubusercontent.com/radhikabgupta/ReadMeInfoProj2/master/assets/mern_01.jpg)
